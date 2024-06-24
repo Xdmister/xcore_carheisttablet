@@ -1,0 +1,10 @@
+['cht_tablet'] = {
+		label = 'Tablet na krádež aut',
+		weight = 500,
+		stack = false,
+		close = true,
+		client = {
+			event = "xcore_carheisttablet:opentablet",
+			usetime = 1000,
+		}
+	},
