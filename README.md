@@ -23,6 +23,12 @@ can be found in configs/contracts.lua. Everything is described in the configs, w
 - qs notify
 - esx notify
 
+## Pre-prepared languages
+- CZ
+- EN
+- DE
+- SK
+- PL
 
 ## Links
 
