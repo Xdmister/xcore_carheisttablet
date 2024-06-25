@@ -6,6 +6,8 @@ can be found in configs/contracts.lua. Everything is described in the configs, w
 ## Preview video
 <a href="https://www.youtube.com/watch?v=WyXnIgmgSH0&ab_channel=XdmiSter" title="Youtube link">https://www.youtube.com/watch?v=WyXnIgmgSH0&ab_channel=XdmiSter</a>
 
+## Links
+
 For all help go to my discord server
 <a href="https://discordapp.com/invite/qnAqCEd" title="Discord invite">XCORE DISCORD</a>
 
