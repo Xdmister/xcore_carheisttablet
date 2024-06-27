@@ -1,14 +1,14 @@
 config = {}
 
 config.settings = {
-    lang = "cz", -- Customizable language. You can find the languages ​​in the langues folder. Supported language (cz,de,eng,pl,sk)
-    duration_regeneration = 1000, -- The time after which new jobs are generated if they are not above the maximum. 1000ms = 1s
-    max_offers = 3, -- Maximum orders after which no new orders are generated
+    lang = "en", -- Customizable language. You can find the languages ​​in the langues folder. Supported language (cz,de,eng,pl,sk)
+    duration_regeneration = 1800000, -- The time after which new jobs are generated if they are not above the maximum. 1000ms = 1s
+    max_offers = 15, -- Maximum orders after which no new orders are generated
     chance_to_unlock_car = true, -- Chance of an unlocked car after spawning a car
-    cooldown_stole = 1, --Cooldown during which the car cannot be stolen 1000ms = 1s
+    cooldown_stole = 3600000, --Cooldown during which the car cannot be stolen 1000ms = 1s
     blip_on_stolean_car = true, -- Icon on the map for the police if the car has a locator
     type_blip = "area", -- "icon", "area"
-    area_blip_radius = 200.0, -- The radius of the circle in which the thief is
+    area_blip_radius = 100.0, -- The radius of the circle in which the thief is
     blip_interval = 5000, -- The interval after which the blip moves to the thief
     dispatch = "aty_dispatch", -- "cd_dispatch", "rcore_dispatch", "core_dispatch", "aty_dispatch","custom"
     fuel = 'ox_fuel', -- 'ox_fuel', 'legacy_fuel', 'ti_fuel', 'x-fuel', 'custom'
