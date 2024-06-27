@@ -294,7 +294,7 @@ function start_offer(offer)
 
                 -- cekani na auto do kontianeru
                 if value_x3 then
-                    container = CreateObject("m23_2_prop_m32_container_01b", end_cords.x, end_cords.y, end_cords.z - 1,
+                    container = CreateObject(config.settings.container_prop_name, end_cords.x, end_cords.y, end_cords.z - 1,
                         false, false, false)
                     FreezeEntityPosition(container, true)
                     SetEntityHeading(container, end_cords.heading)
@@ -424,7 +424,7 @@ function start_offer(offer)
                                     end
 
 
-                                    container = CreateObject("m23_2_prop_m32_container_01a", end_cords.x, end_cords.y,
+                                    container = CreateObject(config.settings.closed_container_prop_name, end_cords.x, end_cords.y,
                                         end_cords.z - 1,
                                         false, false, false)
                                     FreezeEntityPosition(container, true)
