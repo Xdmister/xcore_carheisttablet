@@ -63,11 +63,18 @@ function remove_offer(id)
         })
 end
 
+
+RegisterServerEvent(GetCurrentResourceName() .. ":remove_offer")
+AddEventHandler(GetCurrentResourceName() .. ":remove_offer", function(data)
+    remove_offer(data.offer_id)
+end)
+
+
+
 RegisterServerEvent(GetCurrentResourceName() .. ":start_offer")
 AddEventHandler(GetCurrentResourceName() .. ":start_offer", function(data)
     local sourceId = source
     local offer_data = get_offer_data(data.offer_id)
-    remove_offer(data.offer_id)
     if sourceId ~= nil then
         TriggerClientEvent(GetCurrentResourceName() .. ':offer_start', sourceId, offer_data)
     end
