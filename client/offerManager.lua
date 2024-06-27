@@ -313,14 +313,8 @@ function start_offer(offer)
                     local value_x4 = waitFor(
                         function()
                             if mission_vehicle ~= nil then
-                                local headingRad = end_cords.heading * math.pi / 180
-                                local deltaX = math.sin(headingRad) * 2.5
-                                local deltaY = -math.cos(headingRad) * 2.5
-                                deltaX = deltaX * -1
-                                deltaY = deltaY * -1
-
                                 if GetVehiclePedIsIn(PlayerPedId(), false) == mission_vehicle then
-                                    if GetDistance(GetEntityCoords(PlayerPedId()), vector3(end_cords.x + deltaX, end_cords.y + deltaY, end_cords.z)) < 2 then
+                                    if GetDistance(GetEntityCoords(PlayerPedId()), vector3(end_cords.x, end_cords.y, end_cords.z)) < 2 then
                                         dist_blip = Rem_blip(dist_blip)
                                         FreezeEntityPosition(mission_vehicle, true)
                                         return true
@@ -364,7 +358,7 @@ function start_offer(offer)
                             function()
                                 if mission_vehicle ~= nil then
                                     if not IsPlayerInVehicle() then
-                                        if GetDistance(GetEntityCoords(PlayerPedId()), vector3(end_cords.x, end_cords.y, end_cords.z)) > 10 then
+                                        if GetDistance(GetEntityCoords(PlayerPedId()), vector3(end_cords.x, end_cords.y, end_cords.z)) > 6 then
                                             local vehicles = lib.getNearbyVehicles(
                                                 vector3(end_cords.x, end_cords.y, end_cords.z), 5)
 
