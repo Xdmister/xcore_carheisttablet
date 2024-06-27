@@ -54,6 +54,7 @@ AddEventHandler(GetCurrentResourceName() .. ':offer_start', function(offer)
         if in_mission == false then
             TriggerServerEvent(GetCurrentResourceName() .. ":getpds")
             if pd_count >= config.police.minimumrequier then
+                TriggerServerEvent(GetCurrentResourceName() .. ":remove_offer", offer)
                 in_mission = true
                 start_offer(offer)
             else
@@ -74,6 +75,9 @@ AddEventHandler(GetCurrentResourceName() .. ':offer_start', function(offer)
             })
         end
     else
+        SendNUIMessage({
+            type = "hide_cbtn"
+        })
         client_config.sendNotify({
             title = 'CHT',
             description = lang.cooldown_stole,
