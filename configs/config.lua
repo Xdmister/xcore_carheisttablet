@@ -1,18 +1,20 @@
 config = {}
 
 config.settings = {
-    lang = "eng", -- Customizable language. You can find the languages ​​in the langues folder. Supported language (cz,de,eng,pl,sk)
-    duration_regeneration = 30000, -- The time after which new jobs are generated if they are not above the maximum. 1000ms = 1s
-    max_offers = 20, -- Maximum orders after which no new orders are generated
+    lang = "cz", -- Customizable language. You can find the languages ​​in the langues folder. Supported language (cz,de,eng,pl,sk)
+    duration_regeneration = 1000, -- The time after which new jobs are generated if they are not above the maximum. 1000ms = 1s
+    max_offers = 3, -- Maximum orders after which no new orders are generated
     chance_to_unlock_car = true, -- Chance of an unlocked car after spawning a car
-    cooldown_stole = 108000000, --Cooldown during which the car cannot be stolen 1000ms = 1s
+    cooldown_stole = 1, --Cooldown during which the car cannot be stolen 1000ms = 1s
     blip_on_stolean_car = true, -- Icon on the map for the police if the car has a locator
     type_blip = "area", -- "icon", "area"
-    area_blip_radius = 50.0, -- The radius of the circle in which the thief is
+    area_blip_radius = 200.0, -- The radius of the circle in which the thief is
     blip_interval = 5000, -- The interval after which the blip moves to the thief
-    dispatch = "custom", -- "cd_dispatch", "rcore_dispatch", "core_dispatch", "aty_dispatch","custom"
+    dispatch = "aty_dispatch", -- "cd_dispatch", "rcore_dispatch", "core_dispatch", "aty_dispatch","custom"
     fuel = 'ox_fuel', -- 'ox_fuel', 'legacy_fuel', 'ti_fuel', 'x-fuel', 'custom'
     notify = 'ox_lib', -- 'ox_lib', 'okok', 'qs','esx',  custom
+    container_prop_name = "prop_container_04mb", -- Name of the prop container
+    closed_container_prop_name = "prop_container_03mb" -- Name of the prop container
 }
     
 config.plase_of_destination = { -- Here are the positions where the car can be transported, you can add more than one
@@ -27,6 +29,6 @@ config.police = {
         "police",
         "sheriff"
     },
-    minimumrequier = 2 -- Police minimum for car theft
+    minimumrequier = 0 -- Police minimum for car theft
 }
 return config
