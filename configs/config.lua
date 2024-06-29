@@ -1,7 +1,7 @@
 config = {}
 
 config.settings = {
-    lang = "en", -- Customizable language. You can find the languages ​​in the langues folder. Supported language (cz,de,eng,pl,sk)
+    lang = "eng", -- Customizable language. You can find the languages ​​in the langues folder. Supported language (cz,de,eng,pl,sk)
     duration_regeneration = 1800000, -- The time after which new jobs are generated if they are not above the maximum. 1000ms = 1s
     max_offers = 15, -- Maximum orders after which no new orders are generated
     chance_to_unlock_car = true, -- Chance of an unlocked car after spawning a car
